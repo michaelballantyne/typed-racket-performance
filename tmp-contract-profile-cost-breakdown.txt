@@ -1,0 +1,48 @@
+Running time is 0.49% contracts
+74/14952 ms
+
+
+BY CONTRACT
+
+(-> (struct/c Queue (recursive-contract (or/c () (box/c (or/c (cons/c any/c (recursive-contract g369904171177 #:chaperone)) (-> (cons/c any/c (recursive-contract g369904171177 #:chaperone)))))) #:chaperone) list? (recursive-contract (or/c () (box/c (or/c (cons/c any/c (recursive-contract g369907174179 #:chaperone)) (-> (cons/c any/c (recursive-contract g369907174179 #:chaperone)))))) #:chaperone)) any) @ #(struct:srcloc (lib pfds/queue/real-time.rkt) 6 14 196 4)
+  43 ms
+
+(-> any/c (struct/c Queue (recursive-contract (or/c () (box/c (or/c (cons/c any/c (recursive-contract g369875151164 #:chaperone)) (-> (cons/c any/c (recursive-contract g369875151164 #:chaperone)))))) #:chaperone) list? (recursive-contract (or/c () (box/c (or/c (cons/c any/c (recursive-contract g369878154166 #:chaperone)) (-> (cons/c any/c (recursive-contract g369878154166 #:chaperone)))))) #:chaperone)) (struct/c Queue any/c any/c any/c)) @ #(struct:srcloc /Users/michaelb/Desktop/Documents/School/Grad School/research/typed-racket-performance/tr-pfds/pfds/queue/real-time.rkt 6 24 206 7)
+  41/2 ms
+
+(-> (struct/c Queue (recursive-contract (or/c () (box/c (or/c (cons/c any/c (recursive-contract g369926184197 #:chaperone)) (-> (cons/c any/c (recursive-contract g369926184197 #:chaperone)))))) #:chaperone) list? (recursive-contract (or/c () (box/c (or/c (cons/c any/c (recursive-contract g369929187199 #:chaperone)) (-> (cons/c any/c (recursive-contract g369929187199 #:chaperone)))))) #:chaperone)) (struct/c Queue any/c any/c any/c)) @ #(struct:srcloc /Users/michaelb/Desktop/Documents/School/Grad School/research/typed-racket-performance/tr-pfds/pfds/queue/real-time.rkt 6 19 201 4)
+  21/2 ms
+
+
+BY CALLEE
+
+(-> (struct/c Queue (recursive-contract (or/c () (box/c (or/c (cons/c any/c (recursive-contract g369904171177 #:chaperone)) (-> (cons/c any/c (recursive-contract g369904171177 #:chaperone)))))) #:chaperone) list? (recursive-contract (or/c () (box/c (or/c (cons/c any/c (recursive-contract g369907174179 #:chaperone)) (-> (cons/c any/c (recursive-contract g369907174179 #:chaperone)))))) #:chaperone)) any) @ #(struct:srcloc (lib pfds/queue/real-time.rkt) 6 14 196 4)
+  head
+  43 ms
+
+(-> any/c (struct/c Queue (recursive-contract (or/c () (box/c (or/c (cons/c any/c (recursive-contract g369875151164 #:chaperone)) (-> (cons/c any/c (recursive-contract g369875151164 #:chaperone)))))) #:chaperone) list? (recursive-contract (or/c () (box/c (or/c (cons/c any/c (recursive-contract g369878154166 #:chaperone)) (-> (cons/c any/c (recursive-contract g369878154166 #:chaperone)))))) #:chaperone)) (struct/c Queue any/c any/c any/c)) @ #(struct:srcloc /Users/michaelb/Desktop/Documents/School/Grad School/research/typed-racket-performance/tr-pfds/pfds/queue/real-time.rkt 6 24 206 7)
+  enqueue
+  41/2 ms
+
+(-> (struct/c Queue (recursive-contract (or/c () (box/c (or/c (cons/c any/c (recursive-contract g369926184197 #:chaperone)) (-> (cons/c any/c (recursive-contract g369926184197 #:chaperone)))))) #:chaperone) list? (recursive-contract (or/c () (box/c (or/c (cons/c any/c (recursive-contract g369929187199 #:chaperone)) (-> (cons/c any/c (recursive-contract g369929187199 #:chaperone)))))) #:chaperone)) (struct/c Queue any/c any/c any/c)) @ #(struct:srcloc /Users/michaelb/Desktop/Documents/School/Grad School/research/typed-racket-performance/tr-pfds/pfds/queue/real-time.rkt 6 19 201 4)
+  tail
+  21/2 ms
+
+
+BY CALLER
+
+(-> (struct/c Queue (recursive-contract (or/c () (box/c (or/c (cons/c any/c (recursive-contract g369904171177 #:chaperone)) (-> (cons/c any/c (recursive-contract g369904171177 #:chaperone)))))) #:chaperone) list? (recursive-contract (or/c () (box/c (or/c (cons/c any/c (recursive-contract g369907174179 #:chaperone)) (-> (cons/c any/c (recursive-contract g369907174179 #:chaperone)))))) #:chaperone)) any) @ #(struct:srcloc /Users/michaelb/Desktop/Documents/School/Grad School/research/typed-racket-performance/tr-pfds/pfds/queue/real-time.rkt 6 14 196 4)
+  65/2 ms
+
+(-> (struct/c Queue (recursive-contract (or/c () (box/c (or/c (cons/c any/c (recursive-contract g369904171177 #:chaperone)) (-> (cons/c any/c (recursive-contract g369904171177 #:chaperone)))))) #:chaperone) list? (recursive-contract (or/c () (box/c (or/c (cons/c any/c (recursive-contract g369907174179 #:chaperone)) (-> (cons/c any/c (recursive-contract g369907174179 #:chaperone)))))) #:chaperone)) any) @ #(struct:srcloc (lib pfds/queue/real-time.rkt) 6 14 196 4)
+  step-state @ #(struct:srcloc /Users/michaelb/Desktop/Documents/School/Grad School/research/typed-racket-performance/determinance3.rkt 118 0 4234 1115)
+  run-internal @ #(struct:srcloc /Users/michaelb/Desktop/Documents/School/Grad School/research/typed-racket-performance/determinance3.rkt 146 0 5468 617)
+  [running body] @ #(struct:srcloc /Users/michaelb/Desktop/Documents/School/Grad School/research/typed-racket-performance/mathtest-determinance-feature-profile.rkt #f #f #f #f)
+  21/2 ms
+
+(-> any/c (struct/c Queue (recursive-contract (or/c () (box/c (or/c (cons/c any/c (recursive-contract g369875151164 #:chaperone)) (-> (cons/c any/c (recursive-contract g369875151164 #:chaperone)))))) #:chaperone) list? (recursive-contract (or/c () (box/c (or/c (cons/c any/c (recursive-contract g369878154166 #:chaperone)) (-> (cons/c any/c (recursive-contract g369878154166 #:chaperone)))))) #:chaperone)) (struct/c Queue any/c any/c any/c)) @ #(struct:srcloc /Users/michaelb/Desktop/Documents/School/Grad School/research/typed-racket-performance/tr-pfds/pfds/queue/real-time.rkt 6 24 206 7)
+  41/2 ms
+
+(-> (struct/c Queue (recursive-contract (or/c () (box/c (or/c (cons/c any/c (recursive-contract g369926184197 #:chaperone)) (-> (cons/c any/c (recursive-contract g369926184197 #:chaperone)))))) #:chaperone) list? (recursive-contract (or/c () (box/c (or/c (cons/c any/c (recursive-contract g369929187199 #:chaperone)) (-> (cons/c any/c (recursive-contract g369929187199 #:chaperone)))))) #:chaperone)) (struct/c Queue any/c any/c any/c)) @ #(struct:srcloc /Users/michaelb/Desktop/Documents/School/Grad School/research/typed-racket-performance/tr-pfds/pfds/queue/real-time.rkt 6 19 201 4)
+  21/2 ms
+

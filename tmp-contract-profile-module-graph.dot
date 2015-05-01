@@ -1,0 +1,6 @@
+digraph {
+rankdir=LR
+g567[label="(lib pfds/queue/real-time.rkt)"][color="green"]
+g568[label="determinance3.rkt"][color="red"]
+g568 -> g567[label="74ms"]
+}

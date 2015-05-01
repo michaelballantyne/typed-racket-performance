@@ -1,0 +1,6 @@
+digraph Profile {
+splines="true"
+g569 [label="enqueue\n0ms\n[1] @ determinance3.rkt : 0ms", style=filled, shape="box", fillcolor="1,0,1"];
+g570 [label="head\n0ms\n[0] @ determinance3.rkt : 21/2ms", style=filled, shape="box", fillcolor="1,1.0,1"];
+g571 [label="tail\n0ms\n[2] @ determinance3.rkt : 0ms", style=filled, shape="box", fillcolor="1,0,1"];
+}
